@@ -21,14 +21,15 @@ gem 'jquery-rails', '2.0.0'
 group :test do
   gem 'rspec-rails', '2.9.0'
   gem 'capybara', '1.1.2'
+  # System-dependent gems
   # Test gems on Macintosh OS X
-group :test do
   gem 'rspec-rails', '2.9.0'
   gem 'capybara', '1.1.2'
-  gem 'rb-fsevent', :require => false
+  gem 'rb-fsevent'
   gem 'growl', '1.0.3'
-end
-end
+end 
+
+
 
 group :production do
   gem 'pg', '0.12.2'
